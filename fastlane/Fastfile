@@ -31,17 +31,9 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
-    scan(device: "iPhone 6s")
+    scan(device: "iPhone 6s", code_coverage:true)
   end
 
-  desc "generate code coverage"
-    lane :codecoverage do
-    lcov(
-        project_name: "IosContinuousIntegration",
-        scheme: "IosContinuousIntegration",
-        output_dir: "test_output" # This value is optional. Default is coverage_reports
-        )
-   end
 
   after_all do |lane|
 
