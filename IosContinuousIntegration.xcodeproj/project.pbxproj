@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A541A3201BD4CFB70030333E /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = A541A31F1BD4CFB70030333E /* fastlane */; settings = {ASSET_TAGS = (); }; };
+		A541A3201BD4CFB70030333E /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = A541A31F1BD4CFB70030333E /* fastlane */; };
 		A5CDD0CF1BCE267B00E6F2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDD0CE1BCE267B00E6F2BD /* AppDelegate.swift */; };
 		A5CDD0D11BCE267B00E6F2BD /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDD0D01BCE267B00E6F2BD /* MasterViewController.swift */; };
 		A5CDD0D31BCE267B00E6F2BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDD0D21BCE267B00E6F2BD /* DetailViewController.swift */; };
@@ -225,6 +225,7 @@
 				TargetAttributes = {
 					A5CDD0CA1BCE267B00E6F2BD = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = RQBJLMNVKV;
 					};
 					A5CDD0E01BCE267B00E6F2BD = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -482,11 +483,14 @@
 			baseConfigurationReference = F948CF43E344133CA66A3944 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 8;
 				INFOPLIST_FILE = IosContinuousIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.adriennicolet.ios.IosContinuousIntegration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.therapservices.IosContinuousIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -495,11 +499,14 @@
 			baseConfigurationReference = D62ACA2B1ABA618EAFBB02E9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 8;
 				INFOPLIST_FILE = IosContinuousIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.adriennicolet.ios.IosContinuousIntegration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.therapservices.IosContinuousIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
