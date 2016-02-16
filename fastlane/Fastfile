@@ -32,13 +32,9 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(device: "iPhone 6s", code_coverage:true)
+    slather(input_format: "profdata", ignore: "../**/*/Xcode*")
   end
 
-
-  desc "Generate code coverage data"
-  lane :codecoverage do
-    lcov
-  end
 
   after_all do |lane|
 
