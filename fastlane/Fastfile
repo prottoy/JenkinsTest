@@ -32,7 +32,7 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(device: "iPhone 6s", code_coverage:true)
-    slather(build_directory: 'code_coverage', input_format: 'profdata', scheme: 'IosContinuousIntegration', proj: 'IosContinuousIntegration.xcodeproj')
+    slather(proj: 'IosContinuousIntegration.xcodeproj')
   end
 
 
