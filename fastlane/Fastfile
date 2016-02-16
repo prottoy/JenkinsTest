@@ -32,7 +32,7 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(device: "iPhone 6s", code_coverage:true)
-    slather(input_format: "profdata", ignore: "../**/*/Xcode*")
+slather(input_format: "profdata", ignore: "../**/*/Xcode*", coverage_service: "cobertura_xml")
   end
 
 
